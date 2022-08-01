@@ -1,4 +1,4 @@
-# festaonde
+# comFesta
 
 ## Project setup
 ```
