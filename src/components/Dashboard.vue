@@ -9,7 +9,15 @@ export default {
   computed: {
     user() {
       return this.$store.state.user
-    }
+    },
+  },
+  mounted() {
+    this.$axios.get('https://geoapi.pt/distritos/municipios?json=1')
+    .then((response) => {
+      console.log(response.data)
+    })
+    .catch(() => {
+    })
   },
 }
 </script>

@@ -1,7 +1,10 @@
 <template>
     <div class="login">
         <div class="login-box">
-            <h2>Zona de Administração</h2>
+            <div class="logo">
+              <img src="../../assets/img/logo.png" alt="" />
+              <h2>Zona de Administração</h2>
+            </div>
             <form  @submit.prevent="login" >
                 <div class="user-box">
                     <input type="text" required v-model="user.email" />
@@ -35,7 +38,6 @@ export default {
                 email: '',
                 password: ''
             },
-            errors: {},
             eyePassword: true,
         }
     },
@@ -73,8 +75,21 @@ export default {
 
 <style scoped>
 
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 28px;
+}
+
 form{
   text-align: center;
+}
+
+img{
+  width: 20%;
 }
 
 .eye-span{
@@ -107,28 +122,36 @@ form{
     background: #efefef;
     /* background: linear-gradient(#efefef, #a2a2a2); */
     font-family: sans-serif;
-
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .login-box {
   position: absolute;
   top: 50%;
-  left: 50%;
   width: 400px;
   padding: 40px;
-  transform: translate(-50%, -50%);
+  transform: translate(0%, -50%);
   background: white;
   box-sizing: border-box;
   box-shadow: 0 5px 10px 0px rgb(0 0 0 / 10%);
   border-radius: 10px;
 }
 
+@media(max-width: 460px)
+{
+  .login-box {  
+    width: 90%;
+  }
+}
+
 .login-box h2 {
-  margin: 0 0 30px;
+  margin: 0;
   padding: 0;
   color: black;
   text-align: center;
-  margin-bottom: 40px;
   font-weight: bold;
   font-size: 20px;
   letter-spacing: 0em;

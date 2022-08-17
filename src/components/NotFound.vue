@@ -26,7 +26,7 @@ export default {
   name: 'NotFound',
   methods: {
     voltar() {
-      this.$router.back()
+      this.$router.push({ name: 'Home' });
     }
   }
 }

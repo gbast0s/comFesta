@@ -20,6 +20,10 @@
 
     }
 
+    p.contacto-info{
+        max-width: 90% !important;
+    }
+
     .service_section .card-deck .card {
         margin-bottom: 25px;
     }
@@ -36,6 +40,10 @@
         width: 85%;
         margin: 65px auto;
 
+    }
+
+    p.contacto-info{
+        max-width: 100% !important;
     }
 
     .slider_section .custom_carousel-control {
@@ -160,3 +168,4 @@
         margin-right: 90px !important;
     }
 }
+

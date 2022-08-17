@@ -5,7 +5,7 @@ body {
 }
 
 .layout_padding {
-  padding: 75px 0;
+  padding: 55px 0;
 }
 
 .layout_padding2 {
@@ -437,6 +437,7 @@ a:focus {
   padding: 8px 40px;
   text-transform: uppercase;
   font-size: 14px;
+  min-height: 39px;
 }
 
 
@@ -497,7 +498,7 @@ a:focus {
 
 .footer_section {
   background-color: #efeded;
-  padding: 10px 0;
+  padding: 10px 10px;
   font-size: 12px;
 }
 
