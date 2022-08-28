@@ -124,11 +124,6 @@ export default {
   margin-top: 90px !important;
 }
 
-/* #app {
-
-
-} */
-
 #overlay-box {
  z-index: -2 !important;
 }
@@ -136,4 +131,14 @@ export default {
 * {
       margin: 0;
   }
+
+.Vue-Toastification__toast{
+  min-height: 50px !important;
+  padding: 15px 24px !important;
+}
+
+.Vue-Toastification__close-button:focus{
+  outline: none;
+  border: none;
+}
 </style>

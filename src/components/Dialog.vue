@@ -168,13 +168,14 @@ export default {
         this.loadingFreguesias = false;
       })
       .catch(() => {
-        this.$toast.error("Erro ao carregar as freguesias", {position: "top", duration: 5000})
+        this.$toast.error("Erro ao carregar as freguesias")
         this.loadingFreguesias = false;
       })
     },
     show () {
       document.body.classList.remove('overflowHidden');
       document.body.style.overflow = 'hidden';
+      document.body.style.paddingRight = '19px';
       this.showModal = true;
     },
     fecharModal(event)
@@ -186,6 +187,7 @@ export default {
     },
     hide () {
       document.body.style.overflow = 'auto';
+      document.body.style.paddingRight = '0';
       this.input = "";
       this.showModal = false;
     },

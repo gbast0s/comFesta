@@ -30,6 +30,7 @@
 </template>
 
 <script>
+
 export default {
     name: 'Login',
     data() {
@@ -48,7 +49,6 @@ export default {
         },
         login()
         {
-
           this.$axios.post('login', this.user)
           .then((response) => {
             this.$axios.defaults.headers.common.Authorization = "Bearer " + response.data.access_token
@@ -60,11 +60,11 @@ export default {
           .catch((error) => {
             if(error.response.status == 0)
             {
-              this.$toast.error("Erro ao iniciar sessão", {position: "top", duration: 5000})
+              this.$toast.error("Erro ao iniciar sessão")
             }
             else
             {
-              this.$toast.warning(error.response.data.errors.msg, {position: "top", duration: 5000})
+              this.$toast.warning(error.response.data.errors.msg)
             }
           })
 

@@ -458,7 +458,7 @@ export default {
         this.distrito = "Todos";
       })
       .catch(() => {
-        this.$toast.error("Erro ao carregar os distritos", {position: "top", duration: 5000})
+        this.$toast.error("Erro ao carregar os distritos")
         this.loadingDistritos = false;
       })
     },
@@ -471,13 +471,13 @@ export default {
         this.loadingFreguesias = false;
       })
       .catch(() => {
-        this.$toast.error("Erro ao carregar as freguesias", {position: "top", duration: 5000})
+        this.$toast.error("Erro ao carregar as freguesias")
         this.loadingFreguesias = false;
       })
     },
     contactar()
     {
-      this.$toast.info("Um dia vai ser implementado", {position: "top", duration: 5000})
+      this.$toast.info("Um dia vai ser implementado")
     }
   },
   mounted()
